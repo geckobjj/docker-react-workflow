@@ -1,0 +1,10 @@
+language: generic
+sudo: required
+services: 
+  - docker
+
+before_install:
+  - docker build -t geckobjj/docker-react-workflow -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true geckobjj/docker-react-workflow npm run test -- --coverage
