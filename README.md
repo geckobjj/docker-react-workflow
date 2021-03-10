@@ -1,3 +1,17 @@
+# Docker-React-GitHub-TravisCI-AWS ElasticBeanstalk
+This project is set up to demonstrate dockerizing a react application and setting up the entire CI/CD workflow with GitHub
+TravisCI and ElasticBeanstalk
+
+## Docker Notes
+    That EXPOSE 80 in the Dockerfile tells AWS to expose the port.
+    Normmally its' just a note for the dev to remember to expose the port themselves.
+
+## Travis CI
+    AWS Secret Keys are stored here encrypted.  Go to settings and environment variables to set up
+
+## AWS Setup
+    Had to set up an environment and user here.  Also need to identify the region of S3 bucket that is being used.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
